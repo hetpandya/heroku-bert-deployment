@@ -1,6 +1,6 @@
 # Deploying BERT on Heroku
 
-Code for the medium blog post [Deploying BERT on Heroku](https://pages.github.com/).
+Code for the medium blog post [Deploying BERT on Heroku](https://medium.com/analytics-vidhya/deploying-bert-on-heroku-7df1d23f9c43).
 
 ## Local Deployment
 ### Requirements
