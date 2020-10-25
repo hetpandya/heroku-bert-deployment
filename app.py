@@ -10,7 +10,7 @@ from transformers import AutoTokenizer, AutoModelForQuestionAnswering
 # name = "distilbert-base-uncased-distilled-squad"
 name = "mrm8488/bert-small-finetuned-squadv2"
 
-#tokenizer = AutoTokenizer.from_pretrained(name,)
+tokenizer = AutoTokenizer.from_pretrained(name)
 
 #model = AutoModelForQuestionAnswering.from_pretrained(name)
 
