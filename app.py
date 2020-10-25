@@ -10,7 +10,7 @@ name = "mrm8488/bert-small-finetuned-squadv2"
 
 tokenizer = AutoTokenizer.from_pretrained(name)
 
-#model = AutoModelForQuestionAnswering.from_pretrained(name)
+model = AutoModelForQuestionAnswering.from_pretrained(name)
 
 def answer_question(question, answer_text):
     '''
@@ -75,4 +75,4 @@ def index():
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port, debug=True)
+    app.run(host='0.0.0.0', port=port)
