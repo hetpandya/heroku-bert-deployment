@@ -13,7 +13,7 @@ name = "mrm8488/bert-small-finetuned-squadv2"
 #tokenizer = AutoTokenizer.from_pretrained(name,)
 
 #model = AutoModelForQuestionAnswering.from_pretrained(name)
-'''
+
 def answer_question(question, answer_text):
     '''
     Takes a `question` string and an `answer` string and tries to identify 
@@ -51,7 +51,7 @@ def answer_question(question, answer_text):
     answer = " ".join(answer).replace("[CLS]","").replace("[SEP]","").replace(" ##","")
     
     return answer
-'''
+
 
 app = Flask(__name__)
 
