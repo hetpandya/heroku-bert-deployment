@@ -12,7 +12,7 @@ name = "twmkn9/albert-base-v2-squad2"
 
 tokenizer = AutoTokenizer.from_pretrained(name)
 
-#model = AutoModelForQuestionAnswering.from_pretrained(name)
+model = AutoModelForQuestionAnswering.from_pretrained(name)
 
 def answer_question(question, answer_text):
     '''
