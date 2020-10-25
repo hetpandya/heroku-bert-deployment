@@ -6,9 +6,9 @@ from flask import request
 import torch
 from transformers import AutoTokenizer, AutoModelForQuestionAnswering
 
-# name = "twmkn9/albert-base-v2-squad2"
+name = "twmkn9/albert-base-v2-squad2"
 # name = "distilbert-base-uncased-distilled-squad"
-name = "mrm8488/bert-small-finetuned-squadv2"
+#name = "mrm8488/bert-small-finetuned-squadv2"
 
 tokenizer = AutoTokenizer.from_pretrained(name,)
 
