@@ -3,8 +3,8 @@ from flask import Flask, render_template
 from flask import request
 
 
-import torch
-from transformers import AutoTokenizer, AutoModelForQuestionAnswering
+#import torch
+#from transformers import AutoTokenizer, AutoModelForQuestionAnswering
 
 # name = "twmkn9/albert-base-v2-squad2"
 # name = "distilbert-base-uncased-distilled-squad"
