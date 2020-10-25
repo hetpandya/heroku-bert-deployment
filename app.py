@@ -6,13 +6,20 @@ from flask import request
 import torch
 from transformers import AutoTokenizer, AutoModelForQuestionAnswering
 
-# name = "twmkn9/albert-base-v2-squad2"
-# name = "distilbert-base-uncased-distilled-squad"
-#name = "mrm8488/bert-small-finetuned-squadv2"
+import os
+import wget
 
-tokenizer = AutoTokenizer.from_pretrained(name)
+dir = 'bert-small-finetuned-squadv2'
 
-model = AutoModelForQuestionAnswering.from_pretrained(name)
+if not os.path.exists(dir):
+  os.mkdir(dir)
+  wget.download('https://s3.amazonaws.com/models.huggingface.co/bert/mrm8488/bert-small-finetuned-squadv2/config.json',os.path.join(dir))
+  wget.download('https://s3.amazonaws.com/models.huggingface.co/bert/mrm8488/bert-small-finetuned-squadv2/pytorch_model.bin',os.path.join(dir))
+  wget.download('https://s3.amazonaws.com/models.huggingface.co/bert/mrm8488/bert-small-finetuned-squadv2/tokenizer_config.json',os.path.join(dir))
+
+tokenizer = AutoTokenizer.from_pretrained('bert-small-finetuned-squadv2/tokenizer_config.json')
+
+model = AutoModelForQuestionAnswering.from_pretrained('bert-small-finetuned-squadv2')
 
 def answer_question(question, answer_text):
     '''
