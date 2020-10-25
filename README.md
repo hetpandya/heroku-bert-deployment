@@ -20,5 +20,8 @@ http://localhost:5000
 ### Screenshot
 ![Screenshot](https://github.com/thehetpandya/heroku-bert-deployment/blob/master/images/screenshot.PNG?raw=true)
 
+### Demo
+[https://bertqna.herokuapp.com](https://bertqna.herokuapp.com)
+
 ### License
 Please check `LICENSE` for more details.
